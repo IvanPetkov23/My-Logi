@@ -1,0 +1,22 @@
+[
+  {
+    "truckId": "1",
+    "truckBrand": "Scania",
+    "attachedTrailerId": "1"
+  },
+  {
+    "truckId": "2",
+    "truckBrand": "DAF",
+    "attachedTrailerId": "2"
+  },
+  {
+    "truckId": "3",
+    "truckBrand": "Volvo",
+    "attachedTrailerId": "3"
+  },
+  {
+    "truckId": "4",
+    "truckBrand": "Mercedes-Benz",
+    "attachedTrailerId": "4"
+  }
+]

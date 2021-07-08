@@ -1,0 +1,58 @@
+[
+  {
+    "driverId": "1",
+    "driverFirstName": "Ivan",
+    "driverMiddleName": "Petev",
+    "driverLastName": "Petkov",
+    "driverPID": "9801015489",
+    "driverCity": "Varna",
+    "driverAddress": "ul. Sergey Rumyantsev 1",
+    "driverNumber": "0878456123",
+    "driverEmail": "ivan@abv.bg",
+    "driverUsername": "ivan123",
+    "driverPassword": "ivan123",
+    "drivenTruckId": "1"
+  },
+  {
+    "driverId": "2",
+    "driverFirstName": "Petyo",
+    "driverMiddleName": "Petkov",
+    "driverLastName": "Ivanov",
+    "driverPID": "7107025497",
+    "driverCity": "Ruse",
+    "driverAddress": "ul. Prosvetna 83",
+    "driverNumber": "0878852963",
+    "driverEmail": "petyo@abv.bg",
+    "driverUsername": "petyo123",
+    "driverPassword": "petyo123",
+    "drivenTruckId": "2"
+  },
+  {
+    "driverId": "3",
+    "driverFirstName": "Georgi",
+    "driverMiddleName": "Dimitrov",
+    "driverLastName": "Georgiev",
+    "driverPID": "7411117128",
+    "driverCity": "Sliven",
+    "driverAddress": "ul. General Baranov 38",
+    "driverNumber": "0878456123",
+    "driverEmail": "georgi@abv.bg",
+    "driverUsername": "georgi123",
+    "driverPassword": "georgi123",
+    "drivenTruckId": "3"
+  },
+  {
+    "driverId": "4",
+    "driverFirstName": "Plamen",
+    "driverMiddleName": "Stefanov",
+    "driverLastName": "Stefanov",
+    "driverPID": "5403229254",
+    "driverCity": "Montana",
+    "driverAddress": "ul. Gergina 3",
+    "driverNumber": "0878456123",
+    "driverEmail": "plamen@abv.bg",
+    "driverUsername": "plamen123",
+    "driverPassword": "plamen123",
+    "drivenTruckId": "4"
+  }
+]

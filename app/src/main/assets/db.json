@@ -1,0 +1,191 @@
+{
+  "type": "database",
+  "name": "driver_database",
+  "objects": [
+    {
+      "type": "table",
+      "database": null,
+      "name": "drivers_info",
+      "withoutRowId": true,
+      "ddl": "CREATE TABLE drivers_info (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, first_name TEXT, middle_name TEXT, last_name TEXT, pid TEXT, city TEXT, address TEXT, phone_number TEXT, email TEXT, username TEXT, password TEXT, driven_truck INTEGER REFERENCES truck_info (truck_id), FOREIGN KEY (driven_truck) REFERENCES truck_info (truck_id))",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "constraints": [
+            {
+              "type": "PRIMARY KEY",
+              "definition": "PRIMARY KEY AUTOINCREMENT "
+            },
+            {
+              "type": "NOT NULL",
+              "definition": "NOT NULL"
+            }
+          ]
+        },
+        {
+          "name": "first_name",
+          "type": "TEXT"
+        },
+        {
+          "name": "middle_name",
+          "type": "TEXT"
+        },
+        {
+          "name": "last_name",
+          "type": "TEXT"
+        },
+        {
+          "name": "pid",
+          "type": "TEXT"
+        },
+        {
+          "name": "city",
+          "type": "TEXT"
+        },
+        {
+          "name": "address",
+          "type": "TEXT"
+        },
+        {
+          "name": "phone_number",
+          "type": "TEXT"
+        },
+        {
+          "name": "email",
+          "type": "TEXT"
+        },
+        {
+          "name": "username",
+          "type": "TEXT"
+        },
+        {
+          "name": "password",
+          "type": "TEXT"
+        },
+        {
+          "name": "driven_truck",
+          "type": "INTEGER",
+          "constraints": [
+            {
+              "type": "FOREIGN KEY",
+              "definition": "REFERENCES truck_info (truck_id)"
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "FOREIGN KEY",
+          "definition": "FOREIGN KEY (driven_truck) REFERENCES truck_info (truck_id)"
+        }
+      ],
+      "rows": [
+      ]
+    },
+    {
+      "type": "table",
+      "database": null,
+      "name": "trailer_info",
+      "withoutRowId": true,
+      "ddl": "CREATE TABLE trailer_info (trailer_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, trailer_brand TEXT)",
+      "columns": [
+        {
+          "name": "trailer_id",
+          "type": "INTEGER",
+          "constraints": [
+            {
+              "type": "PRIMARY KEY",
+              "definition": "PRIMARY KEY AUTOINCREMENT "
+            },
+            {
+              "type": "NOT NULL",
+              "definition": "NOT NULL"
+            }
+          ]
+        },
+        {
+          "name": "trailer_brand",
+          "type": "TEXT"
+        }
+      ],
+      "rows": [
+        [
+          1,
+          "Krone"
+        ],
+        [
+          2,
+          "Berger"
+        ],
+        [
+          3,
+          "Humbaur"
+        ],
+        [
+          4,
+          "Meiller"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "database": null,
+      "name": "truck_info",
+      "withoutRowId": true,
+      "ddl": "CREATE TABLE truck_info (truck_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, truck_brand TEXT, attached_trailer INTEGER REFERENCES trailer_info (trailer_id))",
+      "columns": [
+        {
+          "name": "truck_id",
+          "type": "INTEGER",
+          "constraints": [
+            {
+              "type": "PRIMARY KEY",
+              "definition": "PRIMARY KEY AUTOINCREMENT "
+            },
+            {
+              "type": "NOT NULL",
+              "definition": "NOT NULL"
+            }
+          ]
+        },
+        {
+          "name": "truck_brand",
+          "type": "TEXT"
+        },
+        {
+          "name": "attached_trailer",
+          "type": "INTEGER",
+          "constraints": [
+            {
+              "type": "FOREIGN KEY",
+              "definition": "REFERENCES trailer_info (trailer_id)"
+            }
+          ]
+        }
+      ],
+      "rows": [
+        [
+          1,
+          "Scania",
+          1
+        ],
+        [
+          2,
+          "DAF",
+          2
+        ],
+        [
+          3,
+          "Volvo",
+          3
+        ],
+        [
+          4,
+          "Mercedes-Benz",
+          4
+        ]
+      ]
+    }
+  ]
+}

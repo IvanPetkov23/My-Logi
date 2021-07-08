@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.mylogi.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePageFragment_to_driverListFragment"
+            app:destination="@id/driverListFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_truckListFragment"
+            app:destination="@id/truckListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverListFragment"
+        android:name="com.example.mylogi.DriverListFragment"
+        android:label="fragment_driver_list"
+        tools:layout="@layout/fragment_driver_list">
+        <action
+            android:id="@+id/action_driverListFragment_to_driverInfoFragment"
+            app:destination="@id/driverInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverInfoFragment"
+        android:name="com.example.mylogi.DriverInfoFragment"
+        android:label="fragment_driver_info"
+        tools:layout="@layout/fragment_driver_info">
+        <action
+            android:id="@+id/action_driverInfoFragment_to_mapsFragment2"
+            app:destination="@id/mapsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment2"
+        android:name="com.example.mylogi.MapsFragment2"
+        android:label="fragment_maps2"
+        tools:layout="@layout/fragment_maps2" />
+    <fragment
+        android:id="@+id/truckListFragment"
+        android:name="com.example.mylogi.TruckListFragment"
+        android:label="fragment_truck_list"
+        tools:layout="@layout/fragment_truck_list" />
+</navigation>

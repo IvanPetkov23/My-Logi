@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Logi</string>
+    <string name="enter_password">Enter password:</string>
+    <string name="enter_username">Enter username:</string>
+    <string name="login_button">Login</string>
+    <string name="drivers_list">Drivers</string>
+    <string name="truck_and_trailers_list">Trucks and trailers</string>
+    <string name="drivers_list_detail">Click to see full drivers info</string>
+    <string name="trucks_list_detail">Click to see vehicles list</string>
+    <string name="active_cargos_detail">Click to see all cargos list</string>
+    <string name="active_cargos_list">Active cargos</string>
+    <string name="search_text_view">Search</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinner">
+        <item>Registration number</item>
+        <item>Brand</item>
+        <item>Model</item>
+    </string-array>
+</resources>
